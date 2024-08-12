@@ -1,0 +1,18 @@
+{
+    "name": "marcin/phpiggy",
+    "description": "A PHP application for tracking expanse",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Marcin",
+            "email": "pelemistrz@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Framework\\":"src/Framework",
+            "App\\": "src/App"
+        }
+    }
+}
