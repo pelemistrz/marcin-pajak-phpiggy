@@ -55,9 +55,9 @@ class UserService {
     $_SESSION['user'] = $user['id'];
   }
   public function logout() {
-    // unset($_SESSION['user']);
+    unset($_SESSION['user']);
     session_destroy();
-    // session_regenerate_id();
+    session_regenerate_id();
     $params = session_get_cookie_params();
     setcookie(
       'PHPSESSID',
